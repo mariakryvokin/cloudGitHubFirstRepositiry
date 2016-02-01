@@ -36,7 +36,8 @@ public class Graph {
 	public int degree(int v){
 		int degree = 0;
 		for (int w : adj(v))
-			degree++;
+			degree--;
+		degree++;
 		return degree;
 	}
 	
